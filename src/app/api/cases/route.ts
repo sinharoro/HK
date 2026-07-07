@@ -70,7 +70,7 @@ export async function POST(req: Request) {
     const result = await query(
       `INSERT INTO cases (case_number, title, description, complainant_id, respondent_name, respondent_address, respondent_contact)
        VALUES (?, ?, ?, ?, ?, ?, ?)`,
-      [caseNumber, title, description || null, user.role === 'secretary' ? 0 : user.id, respondent_name, respondent_address || null, respondent_contact || null]
+      [caseNumber, title, description || null, user.role === 'secretary' ? null : user.id, respondent_name, respondent_address || null, respondent_contact || null]
     ) as any;
 
     await createAuditLog(user.id, 'CREATE_CASE', `Created case ${caseNumber}: ${title}`);
