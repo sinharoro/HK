@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "HUSTISYAKONEK | Web-Based Summon Issuance & Case Management System",
+  title: "HUSTISYAKONEK | Barangay Justice System",
   description:
     "A Web-Based Summon Issuance and Case Management System for the Lupong Tagapamayapa of Barangay Napolan, Pagadian, Zamboanga del Sur",
   icons: "/favicon.png",

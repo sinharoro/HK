@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+:root {
+  --navy: #1E3A5F;
+  --dark-navy: #0F172A;
+  --gold: #D4A843;
+  --light-gold: #E8C56A;
+  --bg: #F8FAFC;
+}
+
 html {
   scroll-behavior: smooth;
 }
